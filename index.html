@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <title>RNN&amp;D</title>
+  </head>
+  <body>
+    <div id="rann">
+      <!-- <div id="rann3"> -->
+      <div id="fr23">
+        <p id="trann">RNN&amp;D</p>
+        <p id="trannd">Get any Random Names, Numbers, or use Dice</p>
+      </div>
+
+      <!-- <div id="frind-logo-con">
+        <img
+          id="img-ind-logo"
+          src="images/dice-logo.png"
+          alt=""
+          height="120px"
+          `
+        />
+      </div> -->
+      <!-- </div> -->
+      <!-- <div id="rann2"> -->
+      <!-- <div id="arrow">
+          <img src="images/arrow-choose.png" alt="" height="80px" />
+        </div> -->
+
+      <div id="fr19">
+        <button class="btnnonactive" id="btnnames">
+          <p id="tnames">Names</p>
+        </button>
+
+        <button class="btnactive" id="btndice"><p id="tdice">Dice</p></button>
+
+        <button class="btnnonactive" id="btnnumbers">
+          <p id="tnumbers">Numbers</p>
+        </button>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <div id="fr1">
+      <!-- names start here -->
+      <div id="frnames" class="fr2" style="transform: translateX(-100%)">
+        <div id="fr239">
+          <div id="fr238">
+            <div id="fr234"><span id="update-name">Name</span></div>
+
+            <div id="fr248">
+              <div id="fr246">
+                <p id="tfr246">Quick select:</p>
+
+                <div id="fr247">
+                  <button id="use-weekdays" class="fr219-45">
+                    Use week days
+                  </button>
+
+                  <button id="use-months" class="fr219-45">Use months</button>
+
+                  <button id="btnclear-input" class="fr219-45">
+                    Clear input
+                  </button>
+                </div>
+              </div>
+
+              <div id="fr235">
+                <p id="text-input-name">Input your custom names here:</p>
+
+                <div id="fr236">
+                  <input
+                    type="text"
+                    placeholder="Carol, Jorge, Emmy"
+                    id="names"
+                    class="yes-names"
+                  />
+
+                  <p id="text-seperate-names">
+                    Remember to seperate your names with commas (,)
+                  </p>
+                  <button
+                    id="btnprevent-rerolls-names"
+                    class="btnrerolls-num-non-act"
+                    data-on="false"
+                  >
+                    Prevent rerolls
+                  </button>
+                  <div class="fr63b">
+                    <p id="tprevent-rerolls-disp-names">You will get rerolls</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button id="btnnew-name">Get new name</button>
+        </div>
+      </div>
+      <!-- names ends here -->
+
+      <!-- dice starts here -->
+      <div id="frdice" class="fr2" style="transform: translateX(-100%)">
+        <div id="fr339">
+          <div id="fr361">
+            <div id="fr360">
+              <p id="tfr360sum">Sum:</p>
+              <p id="tfr360num">7</p>
+            </div>
+            <div id="fr362">
+              <p id="tfr362">Tap the dice you want to remove from the box</p>
+              <div id="fr351">
+                <div id="fr349">
+                  <img
+                    id="img-black-1"
+                    class="imgdice-use"
+                    src="images/black-1.png"
+                    data-color="black"
+                    data-number="1"
+                    alt=""
+                  />
+                  <img
+                    id="img-red-6"
+                    class="imgdice-use"
+                    src="images/red-6.png"
+                    data-color="red"
+                    data-number="6"
+                    alt=""
+                  />
+                </div>
+                <button id="btnthrow-dice">Tap to throw dice</button>
+              </div>
+            </div>
+          </div>
+          <div id="fr359">
+            <p id="tfr359">Grab your dice here</p>
+            <div id="fr3592">
+              <p id="tfr359add">Tap the dice you want to add to the box</p>
+              <div id="fr352">
+                <img
+                  class="imgdice-not-use"
+                  src="images/blue-1.png"
+                  data-color="blue"
+                  data-number="1"
+                  alt=""
+                />
+                <img
+                  class="imgdice-not-use"
+                  src="images/yellow-3.png"
+                  data-color="yellow"
+                  data-number="3"
+                  alt=""
+                />
+                <img
+                  class="imgdice-not-use"
+                  src="images/gblue-4.png"
+                  data-color="gblue"
+                  data-number="4"
+                  alt=""
+                />
+                <img
+                  class="imgdice-not-use"
+                  src="images/green-5.png"
+                  data-color="green"
+                  data-number="5"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- dice ends here -->
+
+      <!-- numbers starts here -->
+      <div id="frnumbers" class="fr2" style="transform: translateX(-100%)">
+        <div id="fr32">
+          <div id="fr64">
+            <div id="fr30">
+              <p id="text-num-bet">Set min and max</p>
+
+              <div id="fr63">
+                <input id="first-number" class="number-between" type="number" />
+                <input id="last-number" class="number-between" type="number" />
+              </div>
+
+              <div class="fr63b">
+                <button id="btnreset">Reset min and max</button>
+                <button
+                  id="btnprevent-rerolls"
+                  class="btnrerolls-num-non-act"
+                  data-on="false"
+                >
+                  Prevent rerolls
+                </button>
+              </div>
+              <div class="fr63b">
+                <p id="tprevent-rerolls-disp">You will get rerolls</p>
+              </div>
+            </div>
+            <div id="number"><span id="new-number" class="">5</span></div>
+          </div>
+
+          <div id="h1btn">
+            <button id="btnnew-number">
+              <p id="tbtn-new-number">New number</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- numbers ends here -->
+    </div>
+
+    <div id="footer">
+      <p id="ft-text">
+        © copyright 2023 M&amp;WDesigns
+        <a href="http://Info.randomly.website/contact">Contact us / </a>
+
+        <a href="https://d2474249.mobsted.com/pwa/?appid=15">
+          Install this App</a
+        >
+        <!-- <a
+          href="<img src='https://d2474249-admin.mobsted.com/api/v8/qr/imagehex?text=https://d2474249.mobsted.com/pwa/?appid=15' />"
+          >Install App with QR</a
+        > -->
+      </p>
+    </div>
+    <div id="fr470">
+      <p id="fr470wel">Welcome!</p>
+      <p id="fr470mot">Play your games with lots more fun!</p>
+    </div>
+    <div id="fr569">
+      <p id="tfr569">Select here ⬆️</p>
+      <div id="fr568">
+        <div id="fr565" class="fr5con">
+          <p id="tfr565nam" class="fr5lab">Use names</p>
+          <p id="fr565des" class="fr5des">
+            Want to take random turns? Use names to pick your turns randomly.
+          </p>
+        </div>
+        <div id="fr566" class="fr5con">
+          <p id="tfr566nam" class="fr5lab">Use dice</p>
+          <p id="fr566des" class="fr5des">
+            Tired of using physical dice? Here’s the solution. Use dice here!
+          </p>
+        </div>
+        <div id="fr567" class="fr5con">
+          <p id="tfr567nam" class="fr5lab">Use numbers</p>
+          <p id="fr567des" class="fr5des">
+            Want a random number generator? Use numbers!
+          </p>
+        </div>
+        <div id="fr567chooose" class="fr5con">
+          <p id="tfr567choose" class="fr5lab">Take your choice above</p>
+        </div>
+        <button id="btngot-it">Got it</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
