@@ -8,10 +8,10 @@
 
 body {
   display: flex;
-  /* width: 393px; */
-  width: 100%;
-  /* height: 852px; */
-  height: 100%;
+  width: 393px;
+  /* width: 100%; */
+  height: 852px;
+  /* height: 100%; */
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
@@ -31,16 +31,19 @@ body {
       rgba(154, 145, 255, 0.8) 100%
     )
   );
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 /* IDs */
 
 #rann {
   display: flex;
-  padding: 5px 50px;
+  padding: 10px 50px;
+  padding-top: 5px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   align-self: stretch;
   background: var(
     --headeer-fill,
@@ -170,7 +173,8 @@ body {
 #fr30 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  /* align-items: flex-start; */
   gap: 16px;
 }
 
@@ -273,7 +277,7 @@ body {
   background: linear-gradient(180deg, #dfdcfd 23.44%, #9a91ff 100%);
   color: #343434;
   font-family: Lora;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -296,7 +300,7 @@ body {
   border: none;
   color: #4b4b4b;
   font-family: Lora;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -313,7 +317,7 @@ body {
   background: linear-gradient(180deg, #dfdcfd 23.44%, #9a91ff 100%);
   color: #343434;
   font-family: Lora;
-  font-size: 24px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -627,7 +631,7 @@ body {
 #tprevent-rerolls-disp {
   color: #605e5e;
   font-family: Lora;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -683,6 +687,7 @@ body {
     #ffca8c 63.02%,
     #ff8a00 100%
   );
+  margin-top: 60px;
 }
 
 #tfr360sum {
@@ -784,12 +789,8 @@ body {
   align-self: stretch;
 }
 #fr3592 {
-  /* display: flex; */
-  /* flex-direction: column; */
   align-items: center;
-  /* align-items: flex-start; */
-  /* text-align: center; */
-  /* gap: 12px; */
+  gap: 12px;
 }
 
 #tfr359 {
@@ -818,6 +819,7 @@ body {
 }
 
 #tfr359add {
+  margin-bottom: 6px;
   color: #605e5e;
   font-family: Inter;
   font-size: 12px;
@@ -828,9 +830,9 @@ body {
 }
 
 .imgdice-use {
-  margin: 12px;
-  height: 120px;
-  border-radius: 25px;
+  margin: 6px;
+  height: 80px;
+  border-radius: 18px;
   box-shadow: 5px 5px 5px 1px #4b4b4b;
 }
 .imgdice-not-use {
@@ -870,8 +872,7 @@ body {
 #fr470 {
   display: inline-flex;
   position: absolute;
-  top: -550px;
-  padding: 120px;
+  padding: 32px 16px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -879,35 +880,39 @@ body {
   border-radius: 10px;
   border: 4px solid #9a91ff;
   background: linear-gradient(180deg, #dfdcfd 0%, #9a91ff 100%);
-  transition: 2s;
+  transition: 1s;
 }
 
 #fr470wel {
   color: #ff8a00;
   font-family: Inter;
-  font-size: 128px;
+  font-size: 48px;
   font-style: italic;
   font-weight: 900;
   line-height: normal;
-  letter-spacing: 12.8px;
+  letter-spacing: 4.8px;
 }
 
 #fr470mot {
+  align-self: stretch;
   color: #ff8a00;
+  text-align: center;
   font-family: Inter;
-  font-size: 48px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: 1.8px;
+  letter-spacing: 1px;
 }
 
 #fr569 {
   display: inline-flex;
   position: absolute;
-  top: -460px;
-  right: 11.8%;
+  width: 334px;
   padding: 16px;
+  top: -460px;
+  right: center;
+  left: 1.2%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -915,7 +920,7 @@ body {
   border-radius: 10px;
   border: 1px solid #ffca8c;
   background: linear-gradient(180deg, #ffca8c 80%, rgba(255, 202, 140, 0) 100%);
-  transition: 2s;
+  transition: 1s;
 }
 
 #tfr569 {
@@ -930,10 +935,10 @@ body {
 
 #fr568 {
   display: flex;
-  width: 449px;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  align-self: stretch;
 }
 
 .fr5con {
@@ -956,7 +961,7 @@ body {
 
 .fr5des {
   align-self: stretch;
-  color: #605e5e;
+  color: #898989;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;

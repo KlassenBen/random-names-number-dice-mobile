@@ -20,6 +20,7 @@ const diceImg = document.querySelector("#dice1");
 const frnumbers32 = document.querySelector("#fr32");
 const frdice339 = document.querySelector("#fr339");
 const frnames239 = document.querySelector("#fr239");
+const dispExplanMs = document.querySelector("#fr23");
 const frnumbers = document.querySelector("#frnumbers");
 const frnames = document.querySelector("#frnames");
 const frdice = document.querySelector("#frdice");
@@ -124,7 +125,7 @@ class App {
       welcomeMs.style.rotate = "-60deg";
       setTimeout(function () {
         welcomeMs.style.display = "none";
-        explainMs.style.transform = "translateY(700px)";
+        explainMs.style.transform = "translateY(580px)";
         setTimeout(function () {
           explainMs.style.transform = "translateY(0px)";
         }, 30000);
@@ -157,7 +158,7 @@ class App {
     colorNewNameBtn("FFFFFF", "CECECE", 1000);
   }
   _seeExplainMs() {
-    explainMs.style.transform = "translateY(700px)";
+    explainMs.style.transform = "translateY(565px)";
     setTimeout(function () {
       explainMs.style.transform = "translateY(0px)";
     }, 30000);
@@ -607,7 +608,7 @@ class App {
     });
 
     btnThrowDice.addEventListener("click", this._throwDice.bind(this));
-    // arrowChoose.addEventListener("click", this._seeExplainMs.bind(this));
+    dispExplanMs.addEventListener("click", this._seeExplainMs.bind(this));
 
     btnGotIt.addEventListener("click", function () {
       explainMs.style.transform = "translateY(0px)";
