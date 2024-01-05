@@ -257,10 +257,8 @@ class App {
       btnPreventRerollsnumbers.dataset.on === "true"
     ) {
       this._getRandomNumber();
-      // console.error('reroll', `disp${curnumber}`, `Upd${number}`);
     } else {
       newNumber.textContent = number;
-      // console.log(`disp${curnumber}`, `Upd${number}`);
     }
 
     this._animateNumber(0.3, 1, 7, -8);
@@ -297,10 +295,8 @@ class App {
   _updateNameNow(name) {
     const curname = updateName.textContent;
     if (name === curname && btnPreventRerollsnames.dataset.on === "true") {
-      // console.error('reroll');
       this._randNameUpdate();
     } else {
-      // console.log('Go');
       updateName.textContent = name;
     }
   }
@@ -610,20 +606,18 @@ class App {
     btnThrowDice.addEventListener("click", this._throwDice.bind(this));
     dispExplanMs.addEventListener("click", this._seeExplainMs.bind(this));
 
-    btnGotIt.addEventListener("click", function () {
-      explainMs.style.transform = "translateY(0px)";
-    });
+    // btnGotIt.addEventListener("click", function () {
+    //   explainMs.style.transform = "translateY(0px)";
+    // });
 
     btnPreventRerollsnumbers.addEventListener("click", function (e) {
       if (e.target.dataset.on === "false") {
-        console.log("false");
         e.target.classList.remove("btnrerolls-num-non-act");
         e.target.classList.add("btnrerolls-num-act");
         e.target.textContent = "Get rerolls";
         e.target.dataset.on = "true";
         tPreventRerollsDisp.textContent = "You WILL NOT get rerolls";
       } else {
-        console.log("true");
         e.target.classList.remove("btnrerolls-num-act");
         e.target.classList.add("btnrerolls-num-non-act");
         e.target.textContent = "Prevent rerolls";
@@ -633,14 +627,12 @@ class App {
     });
     btnPreventRerollsnames.addEventListener("click", function (e) {
       if (e.target.dataset.on === "false") {
-        console.log("false");
         e.target.classList.remove("btnrerolls-num-non-act");
         e.target.classList.add("btnrerolls-num-act");
         e.target.textContent = "Get rerolls";
         e.target.dataset.on = "true";
         tPreventRerollsDispnames.textContent = "You WILL NOT get rerolls";
       } else {
-        console.log("true");
         e.target.classList.remove("btnrerolls-num-act");
         e.target.classList.add("btnrerolls-num-non-act");
         e.target.textContent = "Prevent rerolls";
