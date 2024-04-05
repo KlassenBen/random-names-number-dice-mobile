@@ -1,7 +1,5 @@
 "use strict";
 
-// "sizes": "144×144",
-// Selecting Elements
 const fr1 = document.querySelector("#fr1");
 const welcomeMs = document.querySelector("#fr470");
 const btnContainer = document.querySelector("#fr19");
