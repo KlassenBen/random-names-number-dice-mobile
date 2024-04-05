@@ -675,6 +675,7 @@ body {
     #ff8a00 100%
   );
   margin-top: 60px;
+  border: solid 3px #1400ff;
 }
 
 #tfr360sum {

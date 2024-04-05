@@ -1,5 +1,6 @@
 "use strict";
 
+// "sizes": "144×144",
 // Selecting Elements
 const fr1 = document.querySelector("#fr1");
 const welcomeMs = document.querySelector("#fr470");
@@ -116,8 +117,19 @@ class App {
     this._initDice();
     // this._onbording();
     this._animatarrow(0.4, 3, 2000, 15);
+    this._registerSW();
   }
-
+  async _registerSW() {
+    if ("serviceWorker" in navigator) {
+      try {
+        await navigator.serviceWorker.register("./sw.js");
+        console.log("registered");
+      } catch (e) {
+        console.log("SW registration failed");
+      }
+    } else {
+    }
+  }
   _onbording() {
     welcomeMs.style.transform = "translateY(190%)";
     setTimeout(function () {
