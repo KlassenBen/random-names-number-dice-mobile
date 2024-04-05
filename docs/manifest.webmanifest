@@ -14,25 +14,4 @@
       "label": "Homescreen of Awesome App"
     },
     {
-      "src": "screenshot2.png",
-      "sizes": "1690x1098",
-      "type": "image/webp",
-      "form_factor": "narrow",
-      "label": "List of Awesome Resources available in Awesome App"
-    }
-  ],
-  "icons": [
-    {
-      "src": "icon-rnnd.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icon-rnnd.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ]
-}
+      "s

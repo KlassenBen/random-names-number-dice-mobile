@@ -644,18 +644,4 @@ class App {
         tPreventRerollsDispnames.textContent = "You WILL NOT get rerolls";
       } else {
         e.target.classList.remove("btnrerolls-num-act");
-        e.target.classList.add("btnrerolls-num-non-act");
-        e.target.textContent = "Prevent rerolls";
-        e.target.dataset.on = "false";
-        tPreventRerollsDispnames.textContent = "You WILL get rerolls";
-      }
-    });
-  }
-
-  //
-}
-const app = new App("here");
-
-// and App here
-
-//--> Buttons
+        e.target.classList.add("btnrer
