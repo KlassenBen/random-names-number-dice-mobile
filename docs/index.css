@@ -6,7 +6,8 @@
 
 body {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
+  width: 100vh;
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
@@ -29,6 +30,7 @@ body {
   );
   overflow-y: scroll;
   overflow-x: hidden;
+  /* padding-bottom: 64px; */
 }
 /* IDs */
 
@@ -129,6 +131,7 @@ body {
   align-items: center;
   flex-shrink: 0;
   transition: 1s;
+  /* padding: 64px; */
 }
 
 #fr32 {
