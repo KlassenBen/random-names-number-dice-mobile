@@ -20,17 +20,11 @@ self.addEventListener("fetch", async (e) => {
   const req = e.request;
   const url = new URL(req.url);
   if (url.origin === location.origin) {
-    e.respondWith(cacheFirst(req));
+    e.respondWith(networkAndCache(req));
   } else {
     e.respondWith(networkAndCache(req));
   }
 });
-
-async function cacheFirst(req) {
-  const cache = await caches.open(cacheName);
-  const cached = await cache.match(req);
-  return cached || fetch(req);
-}
 
 async function networkAndCache(req) {
   const cache = await caches.open(cacheName);
